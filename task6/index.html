@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Task 6</title>
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Welcome to the world of JS</h1>
+    <div>
+        Select subscription type : <br>
+        <input type="radio" name="subscription" value="free" checked onclick="selectSubscription(this.value)" />free
+        <br>
+        <input type="radio" name="subscription" value="premium" onclick="selectSubscription(this.value)" />premium
+        <br>
+        <input type="radio" name="subscription" value="enterprise" onclick="selectSubscription(this.value)" />enterprise
+        <br>
+        <input type="radio" name="subscription" value="platinum" onclick="selectSubscription(this.value)" />platinum
+        <br>
+    </div>
+    <div id="payment" style="display: none;">
+        <input type="text" id="duration" oninput="getTotal()" /> X <span id="selectedSubscription"></span>$ = <span id="total"></span>$
+    </div>
+</body>
+
+</html>

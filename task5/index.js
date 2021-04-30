@@ -77,7 +77,7 @@ function generateRandomNumber() {
     var randomNumberString = "";
     if (x < 10) {
         randomNumberString += "00" + x;
-    } else if (x > 9 && x < 100) {
+    } else if (x < 100) {
         randomNumberString += "0" + x;
     }
     return randomNumberString
